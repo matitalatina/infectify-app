@@ -36,7 +36,7 @@ class Region {
 
   Region({this.code, this.name, this.hospitalizedWithSymptomsCount, this.intensiveCareCount, this.hospitalizedCount, this.quarantineAtHomeCount, this.positiveCount, this.newPositiveCount, this.healedCount, this.deathCount, this.caseCount, this.testCount, this.location, this.date, this.state});
 
-  static fromJson(Map<String, dynamic> json) {
+  static Region fromJson(Map<String, dynamic> json) {
     final coordinates = json['location']['coordinates'];
     return Region(
         date: DateTime.parse(json['date']),

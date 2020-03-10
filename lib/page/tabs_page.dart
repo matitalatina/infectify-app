@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:infectify/page/region_page.dart';
 
 import 'analytics_page.dart';
 
@@ -11,7 +12,7 @@ class _TabsPageState extends State<TabsPage> {
   int _index;
   final _widgetOptions = [
     AnalyticsPage(),
-    Icon(Icons.directions_bike),
+    RegionPage(),
   ];
 
   @override
@@ -23,9 +24,6 @@ class _TabsPageState extends State<TabsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Coronavirus'),
-        ),
         body: Center(
           child: IndexedStack(
               index: _index,

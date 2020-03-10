@@ -10,9 +10,14 @@ class _AnalyticsPageState extends State<AnalyticsPage> with AutomaticKeepAliveCl
   @override
   Widget build(BuildContext context) {
     super.build(context);
-    return WebView(
-      initialUrl: 'http://arcg.is/081a51',
-      javascriptMode: JavascriptMode.unrestricted,
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Coronavirus'),
+      ),
+      body: WebView(
+        initialUrl: 'http://arcg.is/081a51',
+        javascriptMode: JavascriptMode.unrestricted,
+      ),
     );
   }
 
