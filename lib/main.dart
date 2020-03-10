@@ -15,6 +15,8 @@ class MyApp extends StatelessWidget {
       title: 'Infectify',
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
+        accentColor: Colors.lightGreenAccent,
+        brightness: Brightness.dark,
         fontFamily: 'Montserrat',
       ),
       darkTheme: ThemeData(

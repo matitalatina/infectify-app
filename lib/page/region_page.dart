@@ -142,7 +142,7 @@ class _RegionPageState extends State<RegionPage> {
                             backgroundColor: Colors.grey,
                           ),
                           ValueTile(
-                            count: regionItem.region.positiveCount,
+                            count: regionItem.region.caseCount,
                             label: "Totale positivi",
                             iconData: FontAwesome5.user,
                             backgroundColor: Colors.red,

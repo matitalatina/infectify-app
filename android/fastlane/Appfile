@@ -1,0 +1,2 @@
+json_key_file("secrets/infectify-cd.json")
+package_name("it.mattianatali.infectify")
