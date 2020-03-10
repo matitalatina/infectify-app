@@ -2,7 +2,7 @@
 
 # Infectify App
 
-Data from Protezione Civile about Coronavirus in Italy.
+Data from [Protezione Civile](https://github.com/pcm-dpc/COVID-19) about Coronavirus in Italy.
 
 ## Getting Started
 
