@@ -1,6 +1,8 @@
-# Infectify
+![Infectify App](assets/icons/first-page-play-store-it.png)
 
-Data from Protezione Civile about Coronavirus in Italy
+# Infectify App
+
+Data from Protezione Civile about Coronavirus in Italy.
 
 ## Getting Started
 
@@ -8,14 +10,6 @@ For help getting started with Flutter, view our online
 [documentation](https://flutter.io/).
 
 ## How to add secrets
-
-### Common
-
-If you want to add a secret in common `assets/secrets.yml`:
-
-- Modify `assets/secrets.yml`.
-- `cd assets`
-- `travis encrypt-file secrets.yml`
 
 ### Android
 
