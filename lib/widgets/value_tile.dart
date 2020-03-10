@@ -18,30 +18,38 @@ class ValueTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(right: 8),
-      child: Stack(
-        alignment: Alignment.center,
-        children: <Widget>[
-          Opacity(
-            opacity: 0.1,
-            child: Icon(
-              iconData,
-              color: backgroundColor,
-              size: 60,
+      child: Container(
+        width: 140,
+        height: 100,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Text("${this.count} ",
+                    style: TextStyle(
+                        color: backgroundColor, fontWeight: FontWeight.bold, fontSize: 32)),
+                Icon(
+                  iconData,
+                  color: backgroundColor,
+                  size: 30,
+                )
+              ],
             ),
-          ),
-          Column(
-            children: [
-              Text("${this.count}",
-                  style: TextStyle(
-                      color: backgroundColor, fontWeight: FontWeight.bold, fontSize: 32)),
-              Text(
+            Padding(
+              padding: EdgeInsets.only(top: 8),
+              child: Text(
                 "${this.label}",
                 style: TextStyle(color: backgroundColor,),
                 textAlign: TextAlign.center,
               ),
-            ].where((c) => c != null).toList(),
-          )
-        ],
+            ),
+          ].where((c) => c != null).toList(),
+        ),
       ),
     );
   }
